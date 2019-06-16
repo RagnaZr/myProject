@@ -1,53 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>A simple deployment with the Now API!</title>
-    <link rel="stylesheet" href="/www/style.css" />
-  </head>
-  <body>
-    <h1>Welcome to a Static Site with Data from an Express API</h1>
-    <h2>
-      Deployed with
-      <a href="https://zeit.co/docs" target="_blank" rel="noreferrer noopener"
-        >ZEIT Now</a
-      >!
-    </h2>
-    <p>
-      <a
-        href="https://github.com/zeit/now-examples/blob/master/express"
-        target="_blank"
-        rel="noreferrer noopener"
-        >This project</a
-      >
-      includes three files. A static <code>www/index.html</code> (rewritten with
-      <a
-        href="https://zeit.co/docs/v2/deployments/routes/"
-        target="_blank"
-        rel="noreferrer noopener"
-        >Routes</a
-      >
-      for access from the root) file as the homepage, a static
-      <code>www/style.css</code> file for styling, and a
-      <code>api/date.js</code> serverless function that returns the date on
-      invocation. See
-      <a href="/api/date.js"
-        ><code>api/date.js</code> for the Date API with Express</a
-      >.
-    </p>
-    <br />
-    <h3>The date according to Express is:</h3>
-    <p class="date js-date">Loading date...</p>
-    <script>
-      function main() {
-        return fetch('/api/date.js')
-          .then(function(response) {
-            return response.text();
-          })
-          .then(function(date) {
-            document.querySelector('.js-date').textContent = date;
-          });
-      }
-      main();
-    </script>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Fake Partner Center | NiaMall
+        </title>
+        <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+        <link rel="stylesheet" type = "text/css" href = "app.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+
+    </head>
+    <body>
+        <div class= "app">
+            <div class= "headerApp">
+                <div class = "headerApp-Title">
+                    <div class = "logoApp">
+                        <img src = "./picture/logo-partner.png" alt = "partner Center" style = "cursor:pointer;">
+                    </div>
+                </div>
+                <div class = "headerApp-nar Guest">
+                    <button type= "button" class= "g-button g-intent-primary">
+                        <span class ="g-button-text">Login</span>
+                    </button>
+                </div>
+            </div>
+            <div>
+                <div class = "register">
+                    <div class ="registerForm">
+                        <h1 class="title">Sell onNiaMall</h1>
+                        <div class= "greeting"></div>
+                        <div class= "g-formGroup"></div>
+                        <button type="submit" class= "g-button g-intent-primary">
+                            <span class= "g-button-text">Submit</span>
+                        </button>
+                        <p>
+                            By clicking Submit your agree to out 
+                            <a href="#">Service Agreement</a>
+                        </p>
+                        <p>
+                            and confirm that the information you have provided is ccomplete and accurate.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
