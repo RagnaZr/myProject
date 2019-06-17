@@ -1,3 +1,10 @@
+.body {
+    text-transform: none;
+    line-height: 1.28581;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: #182026;
+}
 .app {
     font-family: 'Noto Sans';
     font-size: 13px;
@@ -80,6 +87,133 @@
         text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
         box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045); 
     }
-.register {
-    display: none;
+.app .register {
+    display: grid;
+    background: #f6f6f6;
+}
+.app .register .registerForm{
+    background: #fff;
+    padding: 20px 50px;
+    max-width: 700px;
+    min-width: 500px;
+    margin: 100px auto 120px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.app .register .title{
+    color: #fa4a11;
+    text-align: center;
+}
+.app .register .greeting {
+    box-shadow: 0 1px 0 rgba(16, 22, 26,.15);
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+.app .register .g-formGroup{
+    flex-flow: row nowrap;
+    margin: 0 0 25px;
+    display: flex;
+}
+    .app .register .g-formGroup .g-label{
+        flex: 0 0 40%;
+        padding-top: 5px;
+    }
+    .app .register .g-label{
+        font-weight: 600;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .g-formGroup label.g-label{
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+.app .register .g-formGroup .g-contentForm{
+    display: flex;
+    flex: 0 0 55%;
+    flex-flow: column nowrap;
+}
+.register .g-formGroup .g-contentForm .g-inputGroup{
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.g-contentForm .g-inputGroup input{
+    height:45px;
+    position: relative;
+    width: 100%;
+}
+    .g-input{
+        outline: none;
+        border: none;
+        border-radius: 3px;
+        box-shadow: 0 0 0 0 rgba(19,124,189,0), 0 0 0 0 rgba(19,124,189,0), inset 0 0 0 1px rgba(16,22,26,.15), inset 0 1px 1px rgba(16,22,26,.2);
+        background: #fff;
+        height: 30px;
+        padding: 0 10px;
+        vertical-align: middle;
+        line-height: 30px;
+        color: #182026;
+        font-size: 14px;
+        font-weight: 400;
+        -webkit-transition: -webkit-box-shadow .1s cubic-bezier(.4,1,.75,.9);
+        -webkit-transition: box-shadow .1s cubic-bezier(.4,1,.75,.9);
+        transition: box-shadow .1s cubic-bezier(.4,1,.75,.9);
+        -webkit-appearance: none;
+    }
+.app .register .g-formGroup.shopName{
+    margin: 0 0 10px;
+}
+.app .register .g-formGroup .g-contentForm p{
+    margin: 10px 0;
+    opacity: .5;
+}
+.g-inputGroup.g-disabled{
+    cursor: not-allowed;
+}
+.g-input:disabled {
+    box-shadow: none;
+    background: rgba(206,217,224,.5);
+    color: rgba(92,112,128,.5);
+    resize: none;
+}
+.app .register .g-formGroup .g-htmlSelect select{
+    height: 45px;
+    background: #fff;
+}
+.g-htmlSelect select{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 14px;
+    box-shadow: inset 0 0 0 1px rgba(16,22,26,.2), inset 0 -1px 0 rgba(16,22,26,.1);
+    background-color: #f5f8fa;
+    color: #182026;
+    border-radius: 3px;
+    width: 100%;
+    height: 30px;
+    padding: 0 25px 0 10px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.g-htmlSelect{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    letter-spacing: normal;
+}
+.g-htmlSelect .g-icon{
+    top:30%;
+    color: #5c7080;
+    position: absolute;
+    pointer-events: none;
+    right: 7px;
+    display: inline-block;
+    flex: 0 0 auto;
+    vertical-align: text-bottom;
 }
