@@ -10,10 +10,9 @@
 html {
 	box-sizing: border-box;
 }
-
 *,
-*::before,
-*::after {
+*:before,
+*:after {
 	box-sizing: inherit;
 }
 
@@ -52,6 +51,11 @@ body {
  */
 
 body {
+	text-transform: none;
+    line-height: 1.28581;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: #182026;
 	font-family:
 		-apple-system,
 		BlinkMacSystemFont,
