@@ -67,6 +67,9 @@
         font-size: 14px;
         border-radius: 4px;
         height: 32px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
         user-select: none;
         transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
         position: relative;
@@ -149,7 +152,10 @@
         color: #182026;
         font-size: 14px;
         font-weight: 400;
+        -webkit-transition: -webkit-box-shadow .1s cubic-bezier(.4,1,.75,.9);
+        -webkit-transition: box-shadow .1s cubic-bezier(.4,1,.75,.9);
         transition: box-shadow .1s cubic-bezier(.4,1,.75,.9);
+        -webkit-appearance: none;
     }
 .app .register .g-formGroup.shopName{
     margin: 0 0 10px;
