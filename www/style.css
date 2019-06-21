@@ -131,6 +131,7 @@ h1 {
     .g-formGroup label.g-label{
         margin-bottom: 5px;
         margin-top: 0;
+        display: block;
     }
 .app .register .g-formGroup .g-contentForm{
     display: flex;
@@ -328,4 +329,53 @@ h1 {
 a {
     text-decoration: none;
     color: #106ba3;
+}
+
+.g-elevation0{
+    box-shadow:
+        0 0 0 1px rgba(16,22,26,.15),
+        0 0 0 rgba(16,22,26,0),
+        0 0 0 rgba(16,22,26,0);
+}
+
+.loginBox{
+    padding: 40px;
+    max-width: 450px;
+    border-radius: 4px;
+    margin: 0 auto;
+    text-align: left;
+    box-shadow: 
+         0 1px 6px 0 hsla(0,0%, 54.1%,.5)
+}
+
+.g-card{
+    padding: 15px 20px;
+}
+.g-formGroup{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 15px;
+}
+.g-inputGroup{
+    display: block;
+    position: relative;
+}
+.g-inputGroup .g-input{
+    position: relative;
+    width: 100%;
+}
+.loginBox .g-button.g-intent-primary{
+    padding: 0 32px;
+    font-size: 15px;
+    height: 37px;
+}
+
+.loginBox .forgotPasswordLink{
+    float: right;
+    padding-top: 15px;
+}
+.loginBox .relatedLinks{
+    border-top: 1px solid #f2f2f2;
+    margin: 30px 0 0;
+    padding: 20px 0 0;
 }
