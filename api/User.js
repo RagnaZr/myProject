@@ -1,5 +1,5 @@
-var mongoose = require('mongoose');
-var UsersData = new mongoose.Schema({
+const mongoose = require('mongoose');
+const UsersData = new mongoose.Schema({
     username: String,
     password: String
 });
