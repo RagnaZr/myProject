@@ -17,6 +17,13 @@ app.get('*', (req, res) => {
   res.status(200).send(currentTime);
 });
 
+const mongoose = require('mongoose');
+const UsersData = new mongoose.Schema({
+    username: String,
+    password: String
+});
+mongoose.model('User', UsersData);
+
 app.post('/login', function(req, res){
     var hashedPassword = bcrypt.hashSync(req.body.password, 8);
 
