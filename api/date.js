@@ -3,6 +3,7 @@ const helmet = require('helmet');
 const moment = require('moment');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
+const User = require('./api/User');
 const config = require('./api/config');
 const db = require('./api/db');
 const mongoose = require('mongoose');
