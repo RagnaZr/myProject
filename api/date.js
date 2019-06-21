@@ -35,7 +35,7 @@ app.post('/login', function(req, res){
         if (err) {
             return res.status(500).send('There some thing err when register.');}
         else {
-        var token= jwt.sign({id: user._id}, config.secret, {
+        var token= jwt.sign({id: user._id}, 'supersecrect', {
             expiresIn: 86400
         });
         res.status(200).send({ auth: true, token: token});
