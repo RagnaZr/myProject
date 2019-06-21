@@ -4,7 +4,7 @@ const moment = require('moment');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const config = require('./api/config');
-const db = require('./db');
+const db = require('./api/db');
 const mongoose = require('mongoose');
 const app = express();
 
