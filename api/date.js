@@ -6,7 +6,10 @@ const bcrypt = require('bcryptjs');
 const User = require('./api/User');
 const config = require('./api/config');
 const db = require('./api/db');
+
 const mongoose = require('mongoose');
+mongoose.connect("mongodb://localhost/UserDta");
+
 const app = express();
 
 app.use(helmet());
@@ -17,7 +20,6 @@ app.get('*', (req, res) => {
   res.status(200).send(currentTime);
 });
 
-const mongoose = require('mongoose');
 const UsersData = new mongoose.Schema({
     username: String,
     password: String
