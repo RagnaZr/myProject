@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "helmet": "^3.18.0",
     "jsonwebtoken": "^8.5.1",
     "modern-normalize": "^0.5.0",
